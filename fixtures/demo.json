@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "type": "connect",
+    "at_ms": 0
+  },
+  {
+    "id": "2",
+    "type": "speech_start",
+    "at_ms": 20
+  },
+  {
+    "id": "3",
+    "type": "transcript",
+    "at_ms": 100,
+    "text": "show the weather"
+  },
+  {
+    "id": "4",
+    "type": "speech_end",
+    "at_ms": 150
+  },
+  {
+    "id": "5",
+    "type": "tts_start",
+    "at_ms": 220
+  },
+  {
+    "id": "6",
+    "type": "tts_end",
+    "at_ms": 400
+  },
+  {
+    "id": "7",
+    "type": "close",
+    "at_ms": 450
+  }
+]
