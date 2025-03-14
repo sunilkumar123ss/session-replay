@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 4 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 5 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -16,7 +16,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 2 | 2023-11-01T09:41:44+05:30 | Validate voice-session lifecycle and interruption transitions (present) |
 | 3 | 2023-12-07T18:43:46+05:30 | Add synthetic fixtures for the documented example (present) |
 | 4 | 2024-04-12T11:24:38+05:30 | Expose the command-line interface and default demonstration (present) |
-| 5 | 2025-03-14T16:48:22+05:30 | Cover full lifecycle and establish the test harness (later stage) |
+| 5 | 2025-03-14T16:48:22+05:30 | Cover full lifecycle and establish the test harness (present) |
 | 6 | 2025-04-21T17:04:49+05:30 | Cover barge in loop (later stage) |
 | 7 | 2025-05-25T12:43:26+05:30 | Cover illegal order (later stage) |
 | 8 | 2025-09-02T09:59:01+05:30 | Cover duplicates and time (later stage) |
