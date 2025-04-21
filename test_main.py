@@ -14,3 +14,9 @@ class ReplayTests(unittest.TestCase):
         self.assertEqual(r['duration_ms'], 50)
         self.assertEqual(r['completed_utterances'], 1)
         self.assertTrue(r['complete'])
+
+    def test_barge_in_loop(self):
+        r = replay(events(['connect', 'speech_start', 'speech_end', 'tts_start', 'barge_in', 'speech_end', 'tts_start', 'tts_end']))
+        self.assertEqual(r['state'], 'idle')
+        self.assertEqual(r['barge_ins'], 1)
+        self.assertIsNone(r['duration_ms'])
