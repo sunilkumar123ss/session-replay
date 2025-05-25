@@ -20,3 +20,7 @@ class ReplayTests(unittest.TestCase):
         self.assertEqual(r['state'], 'idle')
         self.assertEqual(r['barge_ins'], 1)
         self.assertIsNone(r['duration_ms'])
+
+    def test_illegal_order(self):
+        with self.assertRaises(ValueError):
+            replay(events(['connect', 'tts_start']))
