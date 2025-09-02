@@ -24,3 +24,13 @@ class ReplayTests(unittest.TestCase):
     def test_illegal_order(self):
         with self.assertRaises(ValueError):
             replay(events(['connect', 'tts_start']))
+
+    def test_duplicates_and_time(self):
+        e = events(['connect', 'close'])
+        e[1]['id'] = '0'
+        with self.assertRaises(ValueError):
+            replay(e)
+        e = events(['connect', 'close'])
+        e[1]['at_ms'] = -1
+        with self.assertRaises(ValueError):
+            replay(e)
