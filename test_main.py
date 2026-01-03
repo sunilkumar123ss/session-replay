@@ -34,3 +34,12 @@ class ReplayTests(unittest.TestCase):
         e[1]['at_ms'] = -1
         with self.assertRaises(ValueError):
             replay(e)
+
+    def test_transcript_validation(self):
+        e = events(['connect', 'speech_start', 'transcript'])
+        with self.assertRaises(ValueError):
+            replay(e)
+        e[-1]['text'] = 'synthetic text'
+        self.assertEqual(replay(e)['transcripts'], ['synthetic text'])
+if __name__ == '__main__':
+    unittest.main()
