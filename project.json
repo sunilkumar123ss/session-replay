@@ -1,0 +1,8 @@
+{
+  "slug": "session-replay",
+  "title": "Voice Session Event Replayer",
+  "description": "Validate a voice-session lifecycle and produce an auditable transition log.",
+  "category": "voice",
+  "demo_args": [],
+  "expected_exit": 0
+}
